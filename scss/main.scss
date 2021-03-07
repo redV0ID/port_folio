@@ -1,6 +1,6 @@
 @import "config";
+@import "menu";
 @import "home";
-
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
