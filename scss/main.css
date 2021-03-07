@@ -19,13 +19,14 @@
 }
 
 .home__name {
+  text-transform: uppercase;
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-top: 1rem;
   border-bottom: 2px solid white;
 }
 
-.home__name--last {
+.home__name-last {
   color: #ff652f;
   font-weight: 700;
 }
@@ -67,6 +68,8 @@ main .social-icons {
 
 main .social-icons a {
   padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 main .social-icons a:hover {
