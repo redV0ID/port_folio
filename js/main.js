@@ -7,7 +7,7 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    if(!notShowMenu) {
+    if(!showMenu) {
         hamburger.classList.add('open');
         showMenu = true;
     } else {
