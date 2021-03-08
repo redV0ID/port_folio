@@ -11,14 +11,15 @@
         rgba($primary-color, 0.3)),
         url('/img/home.jpg') center top;
     background-size: cover;
+    h2 {
+        margin-top: 20px;
+    }
 
     &__name {
-        text-transform: uppercase;
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-top: 1rem;
-        border-bottom: 2px solid set-text-color($primary-color);;
-
+        border-bottom: 2px solid set-text-color($primary-color);
         &-last {
             color: $secondary-color;
             font-weight: 700;
