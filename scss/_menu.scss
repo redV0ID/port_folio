@@ -77,6 +77,19 @@
         transform: translateY(-100%);
         @include transition-ease;
 
+        &__item {
+            transform: translateX(100vw);
+            @include transition-ease;
+            // classes added by js
+            &.open {
+                transform: translateX(0);
+                @include transition-ease;
+            }
+            &.active > a {
+                color: $secondary-color;
+            }
+        }
+
         &.open {
             transform: translateY(0);
         }

@@ -105,6 +105,24 @@
   transition: all 0.5s ease-in-out;
 }
 
+.nav .menu-nav__item {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__item.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
+}
+
 .nav .menu-nav.open {
   -webkit-transform: translateY(0);
           transform: translateY(0);

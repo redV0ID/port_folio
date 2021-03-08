@@ -1,12 +1,16 @@
 'use strict';
+// global variable!
+let showMenu = false;
 
+// get elements
 const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 
-let showMenu = false;
+const navItems = document.querySelectorAll('.menu-nav__item');
+
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
@@ -15,11 +19,16 @@ function toggleMenu() {
         nav.classList.add('open');
         menuNav.classList.add('open');
 
+        navItems.forEach(
+            item => item.classList.add('open'));
+
         showMenu = true;
     } else {
         hamburger.classList.remove('open');
         hamburger.classList.remove('open');
         nav.classList.remove('open');
+        navItems.forEach(
+            item => item.classList.remove('open'));
         showMenu = false;
     }
 }
